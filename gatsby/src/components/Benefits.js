@@ -16,15 +16,23 @@ const SingleBenefitStyles = styled.div`
   .icon {
     font-size: 5rem;
     padding: 2rem;
+    color: var(--orange);
   }
 `;
 
 const BenefitGrid = styled.div`
-  padding: 10rem 4rem;
+  padding: 7rem 4rem 11rem 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background: var(--lightGrey);
+`;
+
+const BenefitHeading = styled.h2`
+  background: var(--lightGrey);
+  padding-top: 11rem;
+  text-align: center;
+  font-size: 3.2rem;
 `;
 
 export default function Benefits() {
@@ -54,17 +62,20 @@ export default function Benefits() {
   }
 
   return (
-    <BenefitGrid>
-      {benefits.map((singleBenefit, i) => {
-        const Icon = icons[i];
-        return (
-          <SingleBenefitSection
-            singleBenefit={singleBenefit}
-            key={singleBenefit.id}
-            Icon={Icon}
-          />
-        );
-      })}
-    </BenefitGrid>
+    <>
+      <BenefitHeading>What to expect from us</BenefitHeading>
+      <BenefitGrid>
+        {benefits.map((singleBenefit, i) => {
+          const Icon = icons[i];
+          return (
+            <SingleBenefitSection
+              singleBenefit={singleBenefit}
+              key={singleBenefit.id}
+              Icon={Icon}
+            />
+          );
+        })}
+      </BenefitGrid>
+    </>
   );
 }

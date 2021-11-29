@@ -5,7 +5,7 @@ const ContactStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
-  padding: 5rem;
+  padding: 8rem 5rem;
   padding-top: 10rem;
   //align-items: center;
   #contact {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import logoOrange from '../assets/images/logoOrange.png';
+import dome from '../assets/images/dome.png';
 
 const NavStyles = styled.nav`
   margin-bottom: 3rem;
@@ -64,7 +64,7 @@ export default function Nav() {
       <ul>
         <li>
           <Link to="/">
-            <img src={logoOrange} alt="G&B Logo" />
+            <img src={dome} alt="G&B Logo" />
           </Link>
         </li>
         <li>

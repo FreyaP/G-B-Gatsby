@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     background-attachment: fixed;
   }
 body {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
  
@@ -34,14 +34,14 @@ body {
     border-width: 1px;
   }
 //Update***********
-  button {
+  button, .button {
     background: var(--orange);
     border: none;
     cursor: pointer;
     color: var(--white);
     border-radius: 3px;
   }
-  button:hover {
+  button:hover, .button:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
   }
   }

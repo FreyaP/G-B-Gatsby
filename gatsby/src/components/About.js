@@ -20,6 +20,14 @@ const ArticleStyles = styled.article`
   h2 {
     align-self: end;
   }
+  .button {
+    display: grid;
+    margin: 0 7rem;
+    text-decoration: none;
+    text-align: center;
+    align-self: start;
+    padding: 1rem;
+  }
 `;
 function SingleAboutSection({ singleAbout }) {
   return (
@@ -28,6 +36,9 @@ function SingleAboutSection({ singleAbout }) {
       <ArticleStyles>
         <h2 className="center">{singleAbout.title}</h2>
         <p className="center">{singleAbout.description}</p>
+        <a className="button" href="#contact">
+          Tell us about your next project
+        </a>
       </ArticleStyles>
     </>
   );
@@ -41,6 +52,7 @@ export default function About({ about }) {
           <SingleAboutSection key={singleAbout.id} singleAbout={singleAbout} />
         ))}
       </AboutStyles>
+
       <Benefits />
     </>
   );
