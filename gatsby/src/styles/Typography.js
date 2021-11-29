@@ -4,7 +4,7 @@ const Typography = createGlobalStyle`
   
   html {
     font-family: 'Lato', sans-serif;
-    color: var(--fontGrey);
+    color: var(--blue);
   }
   p, li {
     letter-spacing: 0.5px;
@@ -18,7 +18,7 @@ const Typography = createGlobalStyle`
   }
  
   a {
-    color: var(--fontGrey);
+    color: var(--blue);
     text-decoration-color: var(--orange);
     /* Chrome renders this weird with this font, so we turn it off */
     text-decoration-skip-ink: none;

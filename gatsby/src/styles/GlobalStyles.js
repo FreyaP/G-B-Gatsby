@@ -3,14 +3,19 @@ import bg from '../assets/images/bg.png';
 
 const GlobalStyles = createGlobalStyle`
   :root {
+    --blue: #141F26;
   --orange: #eb714a;
   --fontGrey: #334d5e;
-  --backgroundGrey: #334d5e;
+  --backgroundGrey: var(--blue);
   --purple: #520841;
   --lightBlue: #407da9;
   --white: white;
   --grey: #E5E5E5;
   --black: #2E2E2E;
+  --lightGrey: #f4f4f4;
+  
+  
+  
   }
   html {
     font-size: 10px;
@@ -19,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     background-attachment: fixed;
   }
 body {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
  
@@ -35,8 +40,9 @@ body {
     cursor: pointer;
     color: var(--white);
     border-radius: 3px;
-    
-    
+  }
+  button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
   }
   }
 //select img before loaded

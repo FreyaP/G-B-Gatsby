@@ -7,8 +7,9 @@ const AboutStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   //row-gap: 3rem;
-  background-color: var(--backgroundGrey);
-  color: var(--white);
+  background-color: var(--blue);
+
+  color: var(--lightGrey);
   .gatsby-image-wrapper {
     max-height: 600px;
   }
