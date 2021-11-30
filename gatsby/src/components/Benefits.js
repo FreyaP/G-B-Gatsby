@@ -8,8 +8,7 @@ const icons = [FaHeart, FaHandshake, FaTools];
 const SingleBenefitStyles = styled.div`
   text-align: center;
   margin: 2rem;
-  flex: 0 0 30%;
-  max-width: 30%;
+  width: 33%;
   background: var(--white);
   padding: 3rem;
 
@@ -30,7 +29,7 @@ const BenefitGrid = styled.div`
 
 const BenefitHeading = styled.h2`
   background: var(--lightGrey);
-  padding-top: 11rem;
+  padding-top: 25rem;
   text-align: center;
   font-size: 3.2rem;
 `;

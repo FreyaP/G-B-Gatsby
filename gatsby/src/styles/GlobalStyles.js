@@ -33,16 +33,17 @@ body {
     border-color: rgba(0,0,0,0.1);
     border-width: 1px;
   }
-//Update***********
+
   button, .button {
     background: var(--orange);
     border: none;
     cursor: pointer;
     color: var(--white);
     border-radius: 3px;
+    transition: ease-in-out 0.2s;
   }
   button:hover, .button:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
+    filter: brightness(125%);
   }
   }
 //select img before loaded

@@ -31,8 +31,11 @@ export default function Testimonials() {
   `;
 
   const SingleTestimonialStyles = styled.div`
+    background: var(--blue);
+    filter: brightness(150%);
     display: grid;
     padding: 4rem;
+    margin: 2rem 4rem;
     align-content: center;
     gap: 1rem;
 
