@@ -39,7 +39,7 @@ const HomeServiceStyles = styled.div`
   justify-content: space-evenly;
   gap: 3rem;
   //margin: 0 0 7rem 0;
-  margin-bottom: -12rem;
+  //margin-bottom: -12rem;
   padding-top: 10rem;
 `;
 const HeadingStyles = styled.h2`
@@ -61,7 +61,7 @@ function SingleService({ service }) {
 export default function HomeServices({ homeServices }) {
   return (
     <>
-      <HeadingStyles className="center">Services</HeadingStyles>
+      <HeadingStyles className="center">What we do</HeadingStyles>
       <HomeServiceStyles>
         {homeServices[0].services.map((singleService) => (
           <SingleService key={singleService.id} service={singleService} />

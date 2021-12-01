@@ -39,7 +39,6 @@ export default function Benefits() {
     query {
       benefit: allSanityBenefit {
         nodes {
-          icon
           description
           id
           name

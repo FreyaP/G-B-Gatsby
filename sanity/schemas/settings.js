@@ -28,7 +28,7 @@ export default {
     },
     {
       name: 'testimonials',
-      title: 'Testimonials',
+      title: 'Top Testimonials',
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'testimonial' }] }],
     },

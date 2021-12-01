@@ -10,6 +10,7 @@ import about from './about';
 import contact from './contact';
 import settings from './settings';
 import benefits from './benefits';
+import process from './process';
 
 export default createSchema({
   // We name our schema
@@ -24,5 +25,6 @@ export default createSchema({
     contact,
     settings,
     benefits,
+    process,
   ]),
 });
