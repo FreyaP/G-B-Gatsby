@@ -25,7 +25,7 @@ const SingleProjectStyles = styled.div`
     font-size: 3rem;
     margin-bottom: -2rem;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
 `;
 

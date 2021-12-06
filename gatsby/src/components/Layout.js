@@ -8,12 +8,13 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 
 const SiteBorderStyles = styled.div`
-  margin: 6rem auto 4rem auto;
-  margin-top: clamp(2rem, 10vw, 6rem);
+  //margin: 6rem auto 4rem auto;
+  //margin-top: clamp(2rem, 10vw, 6rem);
 `;
 
 const ContentStyles = styled.div`
   background: white;
+  margin-top: 12rem;
   padding: 2rem;
 `;
 
@@ -23,8 +24,8 @@ export default function Layout({ children }) {
       <GlobalStyles />
       <Typography />
       <SiteBorderStyles>
+        <Nav />
         <ContentStyles>
-          <Nav />
           {children}
           <Footer />
         </ContentStyles>

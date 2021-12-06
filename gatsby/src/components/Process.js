@@ -20,7 +20,7 @@ function SingleStep({ singleStep }) {
 const ProcessStyles = styled.div`
   color: var(--white);
   background: var(--blue);
-  padding: 15rem 8rem;
+  padding: 15rem 8rem 6rem 8rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3.5rem;
@@ -38,10 +38,23 @@ const ProcessStyles = styled.div`
   .step-text {
     padding-right: 20rem;
   }
+
+  span {
+    grid-column: span 2;
+    text-align: center;
+    padding-top: 7rem;
+
+    a {
+      padding: 1.5rem;
+    }
+    h3 {
+      font-size: 3rem;
+      padding-top: 8rem;
+    }
+  }
 `;
 
 export default function Process({ process }) {
-  console.log(process);
   return (
     <>
       <ProcessStyles>
@@ -56,6 +69,13 @@ export default function Process({ process }) {
             <SingleStep key={singleStep.id} singleStep={singleStep} />
           ))
           .sort(compareOrder)}
+
+        <span>
+          <a href="#contact" className="button">
+            Schedule a consultation
+          </a>
+          <h3>See our past projects</h3>
+        </span>
       </ProcessStyles>
     </>
   );

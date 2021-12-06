@@ -45,7 +45,7 @@ export default function ProjectPage({ data: { project } }) {
       <SEO title={project.name} image={project.image?.asset?.fluid?.src} />
       <ProjectPageStyles>
         <button type="button" onClick={() => window.history.back()}>
-          Back to Projects
+          Back
         </button>
         <Img fluid={project.image.asset.fluid} />
         <h2 className="center">{project.name}</h2>

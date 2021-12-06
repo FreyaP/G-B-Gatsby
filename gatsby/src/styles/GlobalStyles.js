@@ -19,9 +19,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 10px;
-    //background-image: url(${bg});
-    background-size: 100vw;
-    background-attachment: fixed;
+  
   }
 body {
     font-size: 1.8rem;

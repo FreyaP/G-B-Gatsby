@@ -35,11 +35,10 @@ const SingleServiceStyles = styled.a`
 const HomeServiceStyles = styled.div`
   display: grid;
   background: var(--blue);
-  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
   justify-content: space-evenly;
   gap: 3rem;
-  //margin: 0 0 7rem 0;
-  //margin-bottom: -12rem;
+
   padding-top: 10rem;
 `;
 const HeadingStyles = styled.h2`

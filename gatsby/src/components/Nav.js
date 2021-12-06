@@ -4,7 +4,12 @@ import styled from 'styled-components';
 import dome from '../assets/images/dome.png';
 
 const NavStyles = styled.nav`
-  margin-bottom: 3rem;
+  position: fixed;
+  background: var(--white);
+  z-index: 2;
+  width: 100vw;
+  padding-top: 2rem;
+  top: 0;
   ul {
     margin: 0;
     padding: 0;
@@ -12,35 +17,13 @@ const NavStyles = styled.nav`
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
     align-items: center;
-    text-align: center;
+    text-align: start;
     list-style: none;
-    margin-top: -6rem;
+    margin-top: -3rem;
   }
-  /*
-  li {
-    --rotate: -2deg;
-    transform: rotate(var(--rotate));
-    order: 1;
-    &:nth-child(1) {
-      --rotate: 0deg;
-      justify-self: start;
-    }
-    &:nth-child(2) {
-      --rotate: 1deg;
-    }
-    &:nth-child(3) {
-      --rotate: -2.5deg;
-    }
-    &:nth-child(4) {
-      --rotate: 2.5deg;
-    }
-    &:hover {
-      --rotate: 0deg;
-    }
-  }
-  */
+
   a {
-    font-size: 3rem;
+    font-size: 2 rem;
     text-decoration: none;
     &:hover {
       color: var(--orange);

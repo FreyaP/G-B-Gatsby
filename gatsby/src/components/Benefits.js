@@ -20,7 +20,7 @@ const SingleBenefitStyles = styled.div`
 `;
 
 const BenefitGrid = styled.div`
-  padding: 7rem 4rem 11rem 4rem;
+  padding: 7rem 4rem 15rem 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -29,7 +29,7 @@ const BenefitGrid = styled.div`
 
 const BenefitHeading = styled.h2`
   background: var(--lightGrey);
-  padding-top: 25rem;
+  padding-top: 30rem;
   text-align: center;
   font-size: 3.2rem;
 `;
@@ -61,7 +61,7 @@ export default function Benefits() {
 
   return (
     <>
-      <BenefitHeading>What to expect from us</BenefitHeading>
+      <BenefitHeading>What you can expect from us</BenefitHeading>
       <BenefitGrid>
         {benefits.map((singleBenefit, i) => {
           const Icon = icons[i];

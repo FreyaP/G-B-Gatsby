@@ -15,6 +15,11 @@ export default {
       description: 'One line heading for the home page',
     },
     {
+      name: 'hero',
+      title: 'Hero Image',
+      type: 'image',
+    },
+    {
       name: 'services',
       title: 'Top Services',
       type: 'array',
