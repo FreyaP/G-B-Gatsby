@@ -6,8 +6,9 @@ import dome from '../assets/images/dome.png';
 const NavStyles = styled.nav`
   position: fixed;
   background: var(--white);
-  z-index: 2;
+  z-index: 5;
   width: 100vw;
+  height: 10vh;
   padding-top: 2rem;
   top: 0;
   ul {
@@ -32,8 +33,8 @@ const NavStyles = styled.nav`
       color: var(--orange);
     }
     img {
-      width: 15rem;
-      height: auto;
+      width: auto;
+      height: 10vh;
       margin: 2rem;
       //transform: translateY(-25%); //check on this later if needed
     }

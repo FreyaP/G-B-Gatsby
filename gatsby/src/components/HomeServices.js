@@ -10,7 +10,7 @@ const SingleServiceStyles = styled.a`
     transform: scale(110%);
   }
   .gatsby-image-wrapper {
-    max-width: 40rem;
+    //max-width: 40rem;
     height: auto;
   }
   h3 {
@@ -45,7 +45,7 @@ const HeadingStyles = styled.h2`
   background: var(--blue);
   margin: 0;
   color: var(--white);
-  padding-top: 5rem;
+  padding-top: 9rem;
 `;
 
 function SingleService({ service }) {
@@ -60,7 +60,10 @@ function SingleService({ service }) {
 export default function HomeServices({ homeServices }) {
   return (
     <>
-      <HeadingStyles className="center">What we do</HeadingStyles>
+      <HeadingStyles className="center">
+        See how we work with you to turn your vision into reality
+      </HeadingStyles>
+
       <HomeServiceStyles>
         {homeServices[0].services.map((singleService) => (
           <SingleService key={singleService.id} service={singleService} />

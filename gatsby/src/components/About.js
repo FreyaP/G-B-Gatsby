@@ -4,28 +4,26 @@ import styled from 'styled-components';
 import Benefits from './Benefits';
 
 const AboutStyles = styled.div`
+  padding: 6rem 6rem 0 6rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  //row-gap: 3rem;
   background-color: var(--blue);
-
   color: var(--lightGrey);
   .gatsby-image-wrapper {
     max-height: 600px;
+    margin-bottom: -15rem;
   }
 `;
 const ArticleStyles = styled.article`
   display: grid;
   padding: 6rem;
   h2 {
-    align-self: end;
+    align-self: center;
+  }
+  span {
+    text-align: center;
   }
   .button {
-    display: grid;
-    margin: 0 7rem;
-    text-decoration: none;
-    text-align: center;
-    align-self: start;
     padding: 1rem;
   }
 `;
@@ -36,9 +34,11 @@ function SingleAboutSection({ singleAbout }) {
       <ArticleStyles>
         <h2 className="center">{singleAbout.title}</h2>
         <p className="center">{singleAbout.description}</p>
-        <a className="button" href="#contact">
-          Tell us about your next project
-        </a>
+        <span>
+          <a className="button" href="#contact">
+            Tell us about your next project
+          </a>
+        </span>
       </ArticleStyles>
     </>
   );
@@ -52,7 +52,6 @@ export default function About({ about }) {
           <SingleAboutSection key={singleAbout.id} singleAbout={singleAbout} />
         ))}
       </AboutStyles>
-
       <Benefits />
     </>
   );

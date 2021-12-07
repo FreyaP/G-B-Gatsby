@@ -22,7 +22,7 @@ export default function ProjectsPage({ data, pageContext }) {
 }
 
 export const query = graphql`
-  query ProjectQuery($skip: Int = 0, $pageSize: Int = 3) {
+  query ProjectQuery($skip: Int = 0, $pageSize: Int = 6) {
     projects: allSanityProject(limit: $pageSize, skip: $skip) {
       totalCount
       nodes {

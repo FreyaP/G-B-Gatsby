@@ -2,12 +2,20 @@ import React from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
+const PageStyles = styled.div`
+  background: var(--grey);
+  padding: 6rem;
+  h1 {
+    padding-bottom: 8rem;
+  }
+`;
+
 const ServiceGridStyles = styled.div`
   background-color: var(--grey);
   display: grid;
   //grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 1rem;
   grid-auto-rows: auto auto 300px;
 `;
 
@@ -18,7 +26,6 @@ const ServiceStyles = styled.div`
   }
   grid-template-rows: subgrid;
   grid-row: span 3;
-  gap: 2rem;
 
   h2 {
     margin-top: 5rem;
@@ -28,8 +35,8 @@ const ServiceStyles = styled.div`
     margin-top: 0;
     padding: 0 2rem;
   }
-  background-color: var(--grey);
-  //color: white;
+  background-color: var(--lightGrey);
+  margin: 3rem;
 `;
 
 function SingleService({ service }) {
@@ -44,10 +51,13 @@ function SingleService({ service }) {
 
 export default function ServiceList({ services }) {
   return (
-    <ServiceGridStyles>
-      {services.map((service) => (
-        <SingleService key={service.id} service={service} />
-      ))}
-    </ServiceGridStyles>
+    <PageStyles>
+      <h1 className="center">our Services</h1>
+      <ServiceGridStyles>
+        {services.map((service) => (
+          <SingleService key={service.id} service={service} />
+        ))}
+      </ServiceGridStyles>
+    </PageStyles>
   );
 }

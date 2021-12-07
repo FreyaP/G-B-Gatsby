@@ -29,8 +29,8 @@ async function turnProjectsIntoPages({ graphql, actions }) {
       },
     });
   });
-  // TODO: make Project.js template
-  // 3. Figure out how many pages there are based on how many slicemasters there are, and how many per page! parseInt turns into number
+
+  // 3. Figure out how many pages there are based on how many projects there are, and how many per page! parseInt turns into number
   const pageSize = parseInt(process.env.GATSBY_PAGE_SIZE);
   const pageCount = Math.ceil(data.projects.totalCount / pageSize);
   console.log(

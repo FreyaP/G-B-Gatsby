@@ -5,27 +5,43 @@ import { Link } from 'gatsby';
 
 const ProjectListStyles = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin: 4rem 0;
 `;
 
 const SingleProjectStyles = styled.div`
+  .image-container {
+    overflow: hidden;
+  }
   .gatsby-image-wrapper {
-    height: 350px;
-    opacity: 0.7;
+    height: 30vh;
     transition: 1s;
     &:hover {
-      opacity: 1;
+      transform: scale(1.1);
     }
+  }
+  a {
+    display: grid;
+    text-decoration: none;
+    position: relative;
   }
   h2 {
     color: var(--white);
-    text-align: center;
+    text-transform: capitalize;
     font-size: 3rem;
-    margin-bottom: -2rem;
-    position: relative;
+    text-align: center;
+    position: absolute;
+    width: 100%;
     z-index: 1;
+    padding: 1.5rem 0;
+    // fading background on heading for white font to contrast more
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8),
+      hsla(0, 0%, 100%, 0) 90%,
+      hsla(0, 0%, 100%, 0)
+    );
   }
 `;
 
@@ -33,10 +49,10 @@ function SingleProject({ project }) {
   return (
     <SingleProjectStyles>
       <Link to={`/projects/${project.slug.current}`}>
-        <h2>
-          <span className="mark">{project.name}</span>
-        </h2>
-        <Img fluid={project.image.asset.fluid} alt={project.name} />
+        <h2>{project.name}</h2>
+        <div className="image-container">
+          <Img fluid={project.image.asset.fluid} alt={project.name} />
+        </div>
       </Link>
     </SingleProjectStyles>
   );

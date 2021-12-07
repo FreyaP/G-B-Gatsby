@@ -49,7 +49,7 @@ const ProcessStyles = styled.div`
     }
     h3 {
       font-size: 3rem;
-      padding-top: 8rem;
+      padding-top: 10rem;
     }
   }
 `;
@@ -74,7 +74,7 @@ export default function Process({ process }) {
           <a href="#contact" className="button">
             Schedule a consultation
           </a>
-          <h3>See our past projects</h3>
+          <h3>View our past projects</h3>
         </span>
       </ProcessStyles>
     </>

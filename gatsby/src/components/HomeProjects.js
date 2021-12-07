@@ -10,7 +10,7 @@ const SingleProjectStyles = styled.a`
     transform: scale(110%);
   }
   .gatsby-image-wrapper {
-    max-width: 40rem;
+    //max-width: 40rem;
     height: auto;
   }
   h3 {
