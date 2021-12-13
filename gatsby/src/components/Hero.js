@@ -46,7 +46,6 @@ const HeroStyles = styled.div`
 `;
 
 export default function Hero({ hero }) {
-  console.log(hero);
   return (
     <HeroStyles>
       <Img fluid={hero.hero.asset.fluid} alt="Home Page Image" />
