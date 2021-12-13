@@ -1,7 +1,7 @@
 {
-  "name": "slicks-slices-frontend",
+  "name": "G&B Contracting",
   "private": true,
-  "description": "Slick Serves the Sweetest Slices",
+  "description": "Whistler based contyractor specializing in small to medium builds, custom furniture and repairs & maintenance",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -58,8 +58,5 @@
     "esm": "^3.2.25",
     "prettier": "^2.1.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wesbos/slicks-slices"
-  }
+  
 }
