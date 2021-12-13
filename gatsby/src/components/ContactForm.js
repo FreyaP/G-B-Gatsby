@@ -54,10 +54,11 @@ export default function ContactForm() {
         {/* action="/pages/success" for custom success page after form submitted */}
         <form
           name="G&B contact form"
-          netlify
-          netlify-honeypot="bot-field"
-          hidden
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="G&B contact form" />
           <label htmlFor="name">Name</label>
           <input type="text" name="name" required />
           <label htmlFor="email">Email</label>
