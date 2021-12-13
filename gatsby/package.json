@@ -1,5 +1,5 @@
 {
-  "name": "G&B Contracting",
+  "name": "gb-contracting",
   "private": true,
   "description": "Whistler based contyractor specializing in small to medium builds, custom furniture and repairs & maintenance",
   "version": "0.1.0",
@@ -57,6 +57,6 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "esm": "^3.2.25",
     "prettier": "^2.1.1"
-  },
+  }
   
 }

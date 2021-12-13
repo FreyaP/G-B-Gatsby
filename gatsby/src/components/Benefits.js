@@ -17,6 +17,9 @@ const SingleBenefitStyles = styled.div`
     padding: 2rem;
     color: var(--orange);
   }
+  @media (max-width: 480px) {
+    width: 60%;
+  }
 `;
 
 const BenefitGrid = styled.div`

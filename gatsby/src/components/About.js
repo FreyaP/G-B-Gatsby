@@ -6,12 +6,20 @@ import Benefits from './Benefits';
 const AboutStyles = styled.div`
   padding: 6rem 6rem 0 6rem;
   display: grid;
+  row-gap: 2rem;
   grid-template-columns: 1fr 2fr;
   background-color: var(--blue);
   color: var(--lightGrey);
   .gatsby-image-wrapper {
     max-height: 600px;
     margin-bottom: -15rem;
+  }
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    .gatsby-image-wrapper {
+      grid-row: 2;
+      row-gap: 2rem;
+    }
   }
 `;
 const ArticleStyles = styled.article`
@@ -25,6 +33,13 @@ const ArticleStyles = styled.article`
   }
   .button {
     padding: 1rem;
+  }
+  @media (max-width: 435px) {
+    padding: 2rem;
+    gap: 1rem;
+    span {
+      line-height: 1.5;
+    }
   }
 `;
 function SingleAboutSection({ singleAbout }) {

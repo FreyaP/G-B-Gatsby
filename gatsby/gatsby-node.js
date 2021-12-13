@@ -1,5 +1,4 @@
 import path, { resolve } from 'path';
-import fetch from 'isomorphic-fetch';
 
 // make pages for the projects with set number per page
 async function turnProjectsIntoPages({ graphql, actions }) {
@@ -18,7 +17,7 @@ async function turnProjectsIntoPages({ graphql, actions }) {
       }
     }
   `);
-  // TODO: Turn each project into own page
+  // Turn each project into own page
   data.projects.nodes.forEach((project) => {
     actions.createPage({
       component: resolve('./src/templates/Project.js'),
@@ -38,7 +37,6 @@ async function turnProjectsIntoPages({ graphql, actions }) {
   );
   // 4. Loop from 1 to n and create the pages for them
   Array.from({ length: pageCount }).forEach((_, i) => {
-    console.log(`creating page ${i}`);
     actions.createPage({
       path: `/projects/${i + 1}`,
       component: path.resolve('./src/pages/projects.js'),

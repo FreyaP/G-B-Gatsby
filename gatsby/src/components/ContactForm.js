@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-
-import styled from 'styled-components';
 import ContactStyles from '../styles/ContactStyles';
 import useValues from '../utils/useValues';
 import dome from '../assets/images/dome.png';
@@ -23,19 +21,11 @@ export default function ContactForm() {
   const { values, updateValue } = useValues({ maple: '' });
   const mapleErr = 'Robot';
 
-  const ImgStyles = styled.img`
-    background: var(--grey);
-    margin: 0;
-    display: block;
-    width: 20rem;
-    padding-bottom: 3rem;
-  `;
-
   return (
     <>
       <ContactStyles>
         <div id="contact">
-          <ImgStyles src={dome} />
+          <img alt="logo" className="image" src={dome} />
           <h2>{contact.sanityContact.title}</h2>
           <p>{contact.sanityContact.description}</p>
           <p>

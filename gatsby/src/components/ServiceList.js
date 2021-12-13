@@ -8,15 +8,23 @@ const PageStyles = styled.div`
   h1 {
     padding-bottom: 8rem;
   }
+  @media (max-width: 900px) {
+    padding: 6rem 2rem;
+  }
 `;
 
 const ServiceGridStyles = styled.div`
   background-color: var(--grey);
   display: grid;
-  //grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   grid-auto-rows: auto auto 300px;
+  @media (max-width: 820px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ServiceStyles = styled.div`

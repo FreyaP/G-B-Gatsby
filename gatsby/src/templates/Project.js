@@ -7,10 +7,10 @@ import SEO from '../components/SEO';
 const ProjectPageStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  //margin: 0 6rem;
+
   text-align: center;
   background: var(--backgroundGrey);
-  //smaller screens - 1 columm
+
   p,
   h2 {
     padding: 1rem;
@@ -36,6 +36,15 @@ const ProjectPageStyles = styled.div`
   .gatsby-image-wrapper {
     max-width: 1000px;
     grid-row: span 2;
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    .gatsby-image-wrapper {
+      grid-row: span 1;
+    }
+    button {
+      grid-column: span 1;
+    }
   }
 `;
 

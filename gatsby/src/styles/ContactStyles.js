@@ -7,7 +7,13 @@ const ContactStyles = styled.div`
   gap: 5rem;
   padding: 8rem 5rem;
   padding-top: 10rem;
-  //align-items: center;
+  .image {
+    background: var(--grey);
+    margin: 0;
+    display: block;
+    width: 20rem;
+    padding-bottom: 3rem;
+  }
   #contact {
     justify-self: center;
   }
@@ -28,6 +34,9 @@ const ContactStyles = styled.div`
   }
 
   // media query for smaller screen - from 2 cols to 1
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default ContactStyles;

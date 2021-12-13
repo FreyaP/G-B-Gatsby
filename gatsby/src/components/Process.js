@@ -38,6 +38,11 @@ const ProcessStyles = styled.div`
   .step-text {
     padding-right: 20rem;
   }
+  @media (max-width: 600px) {
+    .step-text {
+      padding-right: 5rem;
+    }
+  }
 
   span {
     grid-column: span 2;

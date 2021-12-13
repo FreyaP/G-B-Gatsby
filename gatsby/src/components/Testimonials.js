@@ -12,6 +12,11 @@ const TestimonialsGrid = styled.div`
   h2 {
     grid-column: span 2;
   }
+  @media (max-width: 550px) {
+    div {
+      grid-column: span 2;
+    }
+  }
 `;
 
 const SingleTestimonialStyles = styled.div`

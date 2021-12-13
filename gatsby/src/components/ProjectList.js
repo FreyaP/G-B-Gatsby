@@ -8,6 +8,12 @@ const ProjectListStyles = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin: 4rem 0;
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const SingleProjectStyles = styled.div`
