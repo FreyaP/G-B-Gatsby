@@ -38,14 +38,13 @@ const HomeServiceStyles = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
   justify-content: space-evenly;
   gap: 3rem;
-
   padding-top: 10rem;
 `;
 const HeadingStyles = styled.h2`
   background: var(--blue);
   margin: 0;
   color: var(--white);
-  padding-top: 9rem;
+  padding: 9rem 1rem 1rem 1rem;
 `;
 
 function SingleService({ service }) {

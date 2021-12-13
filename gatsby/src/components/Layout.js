@@ -7,15 +7,10 @@ import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 
-const SiteBorderStyles = styled.div`
-  //margin: 6rem auto 4rem auto;
-  //margin-top: clamp(2rem, 10vw, 6rem);
-`;
-
 const ContentStyles = styled.div`
   background: white;
   margin-top: 12rem;
-  padding: 2rem;
+  padding: 1rem;
 `;
 
 export default function Layout({ children }) {
@@ -23,13 +18,12 @@ export default function Layout({ children }) {
     <div>
       <GlobalStyles />
       <Typography />
-      <SiteBorderStyles>
-        <Nav />
-        <ContentStyles>
-          {children}
-          <Footer />
-        </ContentStyles>
-      </SiteBorderStyles>
+
+      <Nav />
+      <ContentStyles>
+        {children}
+        <Footer />
+      </ContentStyles>
     </div>
   );
 }

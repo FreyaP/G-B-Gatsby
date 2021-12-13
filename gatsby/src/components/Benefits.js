@@ -18,7 +18,7 @@ const SingleBenefitStyles = styled.div`
     color: var(--orange);
   }
   @media (max-width: 480px) {
-    width: 60%;
+    width: 75%;
   }
 `;
 

@@ -39,6 +39,23 @@ const NavStyles = styled.nav`
       //transform: translateY(-25%); //check on this later if needed
     }
   }
+  @media (max-width: 550px) {
+    padding-bottom: 1rem;
+    ul {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 0;
+      justify-items: center;
+      .logo {
+        grid-column-start: span 4;
+      }
+      img {
+        height: 6vh;
+      }
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
 `;
 
 // nav links to pages except for contact which links to class
@@ -46,7 +63,7 @@ export default function Nav() {
   return (
     <NavStyles>
       <ul>
-        <li>
+        <li className="logo">
           <Link to="/">
             <img src={dome} alt="G&B Logo" />
           </Link>
