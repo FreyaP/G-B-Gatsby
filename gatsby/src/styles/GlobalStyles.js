@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
   
   }
   html {
-    font-size: 1vh;
+    font-size: 1.25vh;
   
   }
 body {
